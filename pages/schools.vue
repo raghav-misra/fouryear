@@ -14,9 +14,9 @@ const schools: ISchool[] = [
 
 <template>
     <main class="p-5">
-        <details>
+        <details open>
             <summary>
-                <h1 class="text-4xl font-bold mr-5">my credits.</h1>
+                <h1 class="text-4xl font-bold mr-5">credits</h1>
                 <button class="btn btn-light btn-icon mt-2">library_add</button>
             </summary>
 
@@ -26,9 +26,11 @@ const schools: ISchool[] = [
             </div>
         </details>
 
-        <details>
+        <hr class="border-none h-0.5 bg-white rounded my-3">
+
+        <details open>
             <summary>
-                <h1 class="text-4xl font-bold mr-5">my schools.</h1>
+                <h1 class="text-4xl font-bold mr-5">schools</h1>
                 <button class="btn btn-light btn-icon mt-2">library_add</button>
             </summary>
 
