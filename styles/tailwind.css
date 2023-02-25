@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    @apply text-white;
+}
+
+.btn-light {
+    @apply px-2 py-1 bg-white text-slate-800 rounded cursor-pointer font-bold;
+}
+
+.btn-dark {
+    @apply px-2 py-1 bg-slate-800 text-white rounded cursor-pointer font-bold;
+}
