@@ -1,7 +1,7 @@
 <template>
-    <header class="bg-slate-900 p-3 flex items-center shadow-lg">
-        <h1 class="text-2xl font-bold">four/year</h1>
+    <header class="bg-slate-900 p-5 flex items-center shadow-lg">
+        <NuxtLink class="text-2xl font-bold" to="/">four/year</NuxtLink>
         <span class="flex-1"></span>
-        <NuxtLink class="btn-light" to="/schools">my schools</NuxtLink>
+        <NuxtLink class="btn btn-light" to="/schools">my schools</NuxtLink>
     </header>
 </template>

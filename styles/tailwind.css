@@ -6,10 +6,37 @@
     @apply text-white;
 }
 
+.btn {
+    @apply px-2 py-1 rounded cursor-pointer font-bold;
+}
+
 .btn-light {
-    @apply px-2 py-1 bg-white text-slate-800 rounded cursor-pointer font-bold;
+    @apply bg-white text-slate-800;
 }
 
 .btn-dark {
-    @apply px-2 py-1 bg-slate-800 text-white rounded cursor-pointer font-bold;
+    @apply bg-slate-800 text-white;
+}
+
+.btn-icon {
+    font-family: "Material Symbols Outlined";
+    @apply font-normal;
+}
+
+.link {
+    @apply text-blue-400;
+}
+
+details > summary {
+    @apply mb-5 flex items-center;
+}
+
+details > summary::before {
+    font-family: "Material Symbols Outlined";
+    content: "roller_shades_closed";
+    @apply text-2xl relative top-1 mr-2;
+}
+
+details[open] > summary::before {
+    content: "roller_shades";
 }
