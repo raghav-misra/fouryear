@@ -10,6 +10,22 @@ const schools: ISchool[] = [
     { id: "2", name: "Rutgers University", website: "https://rutgers.edu" },
     { id: "3", name: "San Jose State University", website: "https://sjsu.edu" },
 ];
+
+const creditModeEdit = ref(true);
+const currentCreditId = ref(null);
+const creditFields: Omit<ICredit, "id"> = reactive({
+    type: "course",
+    name: "MATH 1234",
+    score: "100"
+});
+
+const schoolModeEdit = ref(false);
+const currentSchoolId = ref(null);
+const schoolFields: Omit<ISchool, "id"> = reactive({
+    name: "Hustlers' University",
+    website: "https://raghavmisra.dev"
+});
+
 </script>
 
 <template>
